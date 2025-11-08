@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devagirinest Coffee - Premium Coffee from Sakleshpur</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #5D4E37 0%, #3E2723 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .location {
+            font-size: 1rem;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f8f5f0;
+        }
+
+        .intro h2 {
+            font-size: 2.5rem;
+            color: #5D4E37;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .products {
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #5D4E37;
+            margin-bottom: 50px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #D4A574 0%, #8B6F47 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-info h3 {
+            font-size: 1.8rem;
+            color: #3E2723;
+            margin-bottom: 10px;
+        }
+
+        .product-info .variety {
+            color: #8B6F47;
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        .product-info p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .product-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-features li {
+            padding: 8px 0;
+            color: #555;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .product-features li:last-child {
+            border-bottom: none;
+        }
+
+        .product-features li::before {
+            content: "☕ ";
+            margin-right: 8px;
+        }
+
+        .about-section {
+            background: #f8f5f0;
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            color: #5D4E37;
+            margin-bottom: 30px;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background: #3E2723;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        .footer p {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .intro h2, .section-title, .about-content h2 {
+                font-size: 2rem;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Devagirinest Coffee</h1>
+        <p>Premium Coffee from the Heart of Sakleshpur</p>
+        <div class="location">📍 Sakleshpur, Karnataka - The Coffee District of India</div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2>Discover Our Coffee Varieties</h2>
+            <p>Nestled in the lush hills of Sakleshpur, our coffee plantations produce some of the finest Arabica and Robusta beans in India. Experience the rich aroma and distinctive flavors that make our coffee truly special.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Our Coffee Collection</h2>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">☕</div>
+                    <div class="product-info">
+                        <h3>Premium Arabica</h3>
+                        <p class="variety">Arabica Plantation A</p>
+                        <p>Grown at high altitudes in Sakleshpur's misty hills, our Premium Arabica offers a smooth, balanced flavor with subtle fruity notes and a gentle acidity.</p>
+                        <ul class="product-features">
+                            <li>Altitude: 3,500 - 4,500 feet</li>
+                            <li>Flavor Profile: Smooth, fruity, mild acidity</li>
+                            <li>Processing: Washed</li>
+                            <li>Roast: Medium</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">☕</div>
+                    <div class="product-info">
+                        <h3>Estate Robusta</h3>
+                        <p class="variety">Robusta Selection</p>
+                        <p>Bold and full-bodied, our Estate Robusta delivers a strong, earthy flavor with rich crema, perfect for espresso lovers and those who prefer a robust cup.</p>
+                        <ul class="product-features">
+                            <li>Altitude: 2,000 - 3,000 feet</li>
+                            <li>Flavor Profile: Bold, earthy, full-bodied</li>
+                            <li>Processing: Natural</li>
+                            <li>Roast: Dark</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">☕</div>
+                    <div class="product-info">
+                        <h3>Monsoon Malabar</h3>
+                        <p class="variety">Monsooned Arabica</p>
+                        <p>A unique processing method where beans are exposed to monsoon winds, creating a distinctive low-acidity coffee with a mellow, full-bodied character.</p>
+                        <ul class="product-features">
+                            <li>Processing: Monsoon exposure</li>
+                            <li>Flavor Profile: Mellow, low acidity, heavy body</li>
+                            <li>Notes: Earthy, woody, spicy</li>
+                            <li>Roast: Medium-Dark</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">☕</div>
+                    <div class="product-info">
+                        <h3>Single Origin Reserve</h3>
+                        <p class="variety">Specialty Grade Arabica</p>
+                        <p>Our finest selection of hand-picked beans from a single estate, offering exceptional clarity of flavor with notes of chocolate, caramel, and citrus.</p>
+                        <ul class="product-features">
+                            <li>Grade: Specialty (80+ points)</li>
+                            <li>Flavor Profile: Complex, balanced</li>
+                            <li>Notes: Chocolate, caramel, citrus</li>
+                            <li>Roast: Light-Medium</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">☕</div>
+                    <div class="product-info">
+                        <h3>Signature Blend</h3>
+                        <p class="variety">60% Arabica, 40% Robusta</p>
+                        <p>Our masterfully crafted blend combines the smoothness of Arabica with the strength of Robusta, creating a perfectly balanced everyday coffee.</p>
+                        <ul class="product-features">
+                            <li>Blend Ratio: 60/40 Arabica/Robusta</li>
+                            <li>Flavor Profile: Balanced, versatile</li>
+                            <li>Notes: Nutty, chocolate, hint of spice</li>
+                            <li>Roast: Medium</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">☕</div>
+                    <div class="product-info">
+                        <h3>Peaberry Select</h3>
+                        <p class="variety">Rare Arabica Peaberry</p>
+                        <p>A rare treat where only one rounded bean develops in the cherry. These beans are denser and offer a more concentrated, intense flavor experience.</p>
+                        <ul class="product-features">
+                            <li>Type: Natural mutation (5% of crop)</li>
+                            <li>Flavor Profile: Intense, concentrated</li>
+                            <li>Notes: Wine-like, bright, complex</li>
+                            <li>Roast: Medium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-content">
+            <h2>Coffee from Sakleshpur</h2>
+            <p>Sakleshpur, located in the Western Ghats of Karnataka, is renowned as one of India's premier coffee-growing regions. The area's ideal climate, with cool temperatures, adequate rainfall, and misty mornings, creates perfect conditions for cultivating exceptional coffee.</p>
+            <p>Our coffee plantations follow traditional and sustainable farming practices, ensuring that every bean is grown with care for the environment and harvested at peak ripeness. From our estates to your cup, we maintain the highest standards of quality.</p>
+            <p>Experience the rich heritage and distinctive flavors of Sakleshpur coffee with Devagirinest.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Devagirinest Coffee - Sakleshpur, Karnataka</p>
+            <p>Bringing you the finest coffee from India's coffee district</p>
+        </div>
+    </footer>
+</body>
+</html>
